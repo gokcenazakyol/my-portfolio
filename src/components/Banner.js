@@ -10,8 +10,8 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["ML Engineer", "Data Scientist", "Software Engineer"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
+    const [delta, setDelta] = useState(250 - Math.random() * 100);
+    const period = 1500;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -51,9 +51,8 @@ export const Banner = () => {
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Welcome to my Portfolio!</span>
-                                <h1>{"Hi! I'm Gokce "}<span className="wrap">{text}</span></h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                <button OnClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                                <h1>{"Hi! I'm Gokcenaz Akyol. "}<span className="wrap">{text}</span></h1>
+                                <p>Undergraduate student who is enrolled in Artificial Intelligence Engineering program at Hacettepe University. Dedicated to artificial intelligence, having a half year of expertise, and specialising in machine learning, deep learning, and computer vision.</p>
                             </div>}
                         </TrackVisibility>
                     </Col>
